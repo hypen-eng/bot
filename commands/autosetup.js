@@ -1,6 +1,13 @@
 const botconfig = require("../botconfig.json");
 
 module.exports.run = async (_bot, message) => {
+    if (!message.member.hasPermission("MANAGE_CHANNELS")) {
+        return message.channel.send("❌ **| You don't have `MANAGE_CHANNELS` permission!**")
+    }
+
+    if (!message.guild.me.hasPermission("MANAGE_CHANNELS")) {
+        return message.channel.send("❌ **| I am lacking permission of `MANAGE_CHANNELS`**")
+    }
     message.guild.channels
         .create(`${botconfig["channel-name"]}`, {
             type: 'text',
