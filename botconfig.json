@@ -4,5 +4,5 @@
     "clientid": "YOUR_BOT_CLIENT_ID",
     "server": "YOUR_SERVER_INVITE",
     "owners": "YOUR_ID",
-    "channel-name": "CHANNEL_NAME"
+    "channel-name": "your channel name"
 }
