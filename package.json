@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "HYPEN",
   "license": "ISC",
   "dependencies": {
     "chatcord": "0.0.5",
