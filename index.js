@@ -69,7 +69,7 @@ bot.on('message', async message => {
     const channel = message.guild.channels.cache.find(ch => ch.name === `${botconfig["channel-name"]}`);
     if (message.channel.id != channel) return;
     chat.chat(message.cleanContent).then(reply => {
-        message.channel.send(`**${message.author.tag} :** ${reply}`)
+        message.channel.send(`** :** ${reply}`)
     })
 })
 
